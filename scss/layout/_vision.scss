@@ -1,0 +1,1096 @@
+/*=============================================
+=            key vision           =
+=============================================*/
+section#key-vision {
+  padding: 0;
+  width: 100%;
+  height: 800px;
+  min-height: 800px;
+  margin: 0 auto;
+  background: #282e44;
+  position: relative;
+  @include large {
+    min-height: 768px;
+  }
+  @include medium {
+    min-height: 800px;
+  }
+  @include small {
+    min-height: 767px;
+  }
+  @include extraSmall {
+    min-height: 480px;
+  }
+  .main-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include medium {
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+    @include small {
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+    @include extraSmall {
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+  }
+
+  .main-image {
+    position: relative;
+    width: 50%;
+    min-width: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include large {
+      width: 57%;
+      min-width: auto;
+    }
+    @include medium {
+      width: 90%;
+      min-width: auto;
+    }
+    @include small {
+      width: 90%;
+      min-width: auto;
+    }
+    @include extraSmall {
+      width: 95%;
+      min-width: auto;
+    }
+    #potted {
+      width: 185px;
+      height: auto;
+      position: absolute !important;
+      bottom: 212px;
+      left: 50%;
+      transform: translateX(-50%) !important;
+      margin-left: -30%;
+      @include large {
+        width: 135px;
+        bottom: 160px;
+        margin-left: -37%;
+      }
+      @include medium {
+        width: 158px;
+        bottom: 198px;
+        margin-left: -35%;
+      }
+      @include small {
+        width: 135px;
+        bottom: 135px;
+        margin-left: -37.5%;
+      }
+      @include extraSmall {
+        display: none;
+        width: 100px;
+        margin-left: -125px;
+        bottom: 67px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    #game-joystick-2 {
+      width: 160px;
+      height: auto;
+      position: absolute !important;
+      bottom: 83px;
+      left: 50%;
+      transform: translateX(-50%) !important;
+      margin-left: -38%;
+      @include large {
+        width: 130px;
+        bottom: 68px;
+      }
+      @include medium {
+        width: 140px;
+        bottom: 103px;
+        margin-left: -40%;
+      }
+      @include small {
+        width: 115px;
+        bottom: 60px;
+        margin-left: -40%;
+      }
+      @include extraSmall {
+        display: none;
+        width: 100px;
+        bottom: -75px;
+        margin-left: -35%;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    #tv {
+      width: 687px;
+      height: auto;
+      position: relative;
+      margin-left: 10%;
+      @include large {
+        width: auto;
+        margin-left: 10%;
+      }
+      @include medium {
+        width: auto;
+        margin-left: 0;
+      }
+      @include small {
+        width: auto;
+        margin-left: 0;
+      }
+      @include extraSmall {
+        width: auto;
+        margin-left: 0;
+      }
+      img.tv {
+        width: 687px;
+        height: auto;
+        margin: 0 auto;
+        @include large {
+          width: 500px;
+        }
+        @include medium {
+          width: 520px;
+        }
+        @include small {
+          width: 415px;
+        }
+        @include extraSmall {
+          width: 335px;
+        }
+      }
+      #screen {
+        width: 417px;
+        height: 327px;
+        position: absolute;
+        top: 50% !important;
+        left: 50% !important;
+        margin-left: -38.9% !important;
+        margin-top: -180px !important;
+        border-radius: 2px;
+        overflow: hidden;
+        mask: url('../images/tv-mask.png') no-repeat center center;
+        mask-size: contain;
+        @include large {
+          width: 303px;
+          height: 238px;
+          top: 213.5px !important;
+          margin-left: -38.7% !important;
+        }
+        @include medium {
+          width: 313px;
+          height: 245px;
+          top: 215px !important;
+          margin-left: -38.6% !important;
+        }
+        @include small {
+          width: 250px;
+          height: 196px;
+          top: 209px !important;
+          margin-left: -38.6% !important;
+        }
+        @include extraSmall {
+          width: 203px;
+          height: 159px;
+          top: 203px !important;
+          margin-left: -38.6% !important;
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 15%;
+          box-shadow: inset 0px 0px 10px 8px rgba(0, 0, 0, 0.8);
+          @include extraSmall {
+            box-shadow: inset 0px 0px 6px 4px rgba(0, 0, 0, 0.8);
+          }
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 10;
+          background-image: -webkit-gradient(
+            linear,
+            50% 0%,
+            50% 100%,
+            color-stop(0%, rgba(255, 255, 255, 0)),
+            color-stop(50%, rgba(255, 255, 255, 0)),
+            color-stop(70%, rgba(0, 0, 0, 0.2)),
+            color-stop(100%, rgba(0, 0, 0, 0.6))
+          );
+          background-size: 100% 0.5vh;
+          background-position: center center;
+          animation: flicker 0.15s infinite;
+        }
+
+        .screen-title {
+          position: absolute;
+          top: 26px;
+          left: 50%;
+          margin-left: -119.5px;
+          z-index: 3;
+          @include large {
+            top: 25px;
+            margin-left: -81.5px;
+          }
+          @include medium {
+            top: 25px;
+            margin-left: -83px;
+          }
+          @include small {
+            top: 16px;
+            margin-left: -69.5px;
+          }
+          @include extraSmall {
+            top: 16px;
+            margin-left: -60.5px;
+          }
+          .text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p {
+              font-size: 57px;
+              font-family: 'SuperMario256';
+              text-transform: uppercase;
+              letter-spacing: -5px;
+              -webkit-text-stroke: 3px #000;
+              text-shadow: 0px 0px 0px #000, 1px 0px 0px #000, 2px 0px 0px #000, 3px 0px 0px #000, 4px 0px 0px #000,
+                5px 0px 0px #000, 5px 1px 0px #000, 5px 2px 0px #000, 5px 3px 0px #000, 5px 4px 0px #000,
+                5px 5px 0px #000;
+              &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                text-shadow: 0px 0px 0px #000;
+              }
+              @include large {
+                font-size: 42px;
+                text-shadow: 0px 0px 0px #000, 1px 0px 0px #000, 2px 0px 0px #000, 3px 0px 0px #000, 3px 1px 0px #000,
+                  3px 2px 0px #000, 3px 3px 0px #000;
+              }
+              @include medium {
+                font-size: 42px;
+                text-shadow: 0px 0px 0px #000, 1px 0px 0px #000, 2px 0px 0px #000, 3px 0px 0px #000, 4px 0px 0px #000,
+                  4px 1px 0px #000, 4px 2px 0px #000, 4px 3px 0px #000, 4px 4px 0px #000;
+              }
+              @include small {
+                font-size: 34px;
+                letter-spacing: -3px;
+                text-shadow: 0px 0px 0px #000, 1px 0px 0px #000, 2px 0px 0px #000, 3px 0px 0px #000, 3px 1px 0px #000,
+                  3px 2px 0px #000, 3px 3px 0px #000;
+              }
+              @include extraSmall {
+                font-size: 28px;
+                letter-spacing: -1.6px;
+                -webkit-text-stroke: 2px #000;
+                text-shadow: 0px 0px 0px #000, 1px 0px 0px #000, 2px 0px 0px #000, 3px 0px 0px #000, 3px 1px 0px #000,
+                  3px 2px 0px #000, 3px 3px 0px #000;
+              }
+            }
+            &.top {
+              &::after {
+                content: '';
+                position: absolute;
+                top: 35px;
+                left: 50%;
+                width: 120px;
+                height: 34px;
+                background-color: #000;
+                z-index: -1;
+                margin-left: -60px;
+                @include large {
+                  content: '';
+                  position: absolute;
+                  top: 22px;
+                  left: 50%;
+                  width: 90px;
+                  height: 34px;
+                  background-color: #000;
+                  z-index: -1;
+                  margin-left: -41px;
+                }
+                @include medium {
+                  content: '';
+                  position: absolute;
+                  top: 22px;
+                  left: 50%;
+                  width: 90px;
+                  height: 34px;
+                  background-color: #000;
+                  z-index: -1;
+                  margin-left: -41px;
+                }
+                @include small {
+                  content: '';
+                  position: absolute;
+                  top: 17px;
+                  left: 50%;
+                  width: 85px;
+                  height: 34px;
+                  background-color: #000;
+                  z-index: -1;
+                  margin-left: -41px;
+                }
+                @include extraSmall {
+                  content: '';
+                  position: absolute;
+                  top: 10px;
+                  left: 50%;
+                  width: 60px;
+                  height: 25px;
+                  background-color: #000;
+                  z-index: -1;
+                  margin-left: -30px;
+                }
+              }
+              p {
+                font-size: 53px;
+                @include large {
+                  font-size: 38px;
+                }
+                @include medium {
+                  font-size: 38px;
+                }
+                @include small {
+                  font-size: 30px;
+                }
+                @include extraSmall {
+                  font-size: 24px;
+                }
+                &:nth-child(1) {
+                  color: #019cd5;
+                }
+                &:nth-child(2) {
+                  color: #fcce30;
+                }
+                &:nth-child(3) {
+                  color: #e92728;
+                }
+                &:nth-child(4) {
+                  color: #42b051;
+                }
+                &:nth-child(5) {
+                  color: #fcce30;
+                }
+              }
+            }
+            &.lower {
+              margin-top: -13px;
+              @include large {
+                margin-top: -9px;
+              }
+              @include medium {
+                margin-top: -8px;
+              }
+              @include small {
+                margin-top: -8px;
+              }
+              @include extraSmall {
+                margin-top: -5px;
+              }
+              p {
+                &:nth-child(1) {
+                  color: #e92728;
+                }
+                &:nth-child(2) {
+                  color: #42b051;
+                }
+                &:nth-child(3) {
+                  color: #fcce30;
+                }
+                &:nth-child(4) {
+                  color: #019cd5;
+                }
+                &:nth-child(5) {
+                  color: #42b051;
+                }
+                &:nth-child(6) {
+                  color: #e92728;
+                }
+                &:nth-child(7) {
+                  color: #fcce30;
+                }
+                &:nth-child(8) {
+                  color: #019cd5;
+                }
+              }
+            }
+          }
+        }
+        .mario {
+          position: absolute;
+          z-index: 3;
+          @include large {
+            bottom: 215px;
+          }
+          @include medium {
+            bottom: 213px;
+          }
+          @include small {
+            bottom: 167px;
+          }
+          @include extraSmall {
+            bottom: 117px;
+          }
+          &.mario-run {
+            display: block;
+            bottom: 78px;
+            left: 50%;
+            margin-left: -55px;
+            @include large {
+              bottom: 41px;
+            }
+            @include medium {
+              bottom: 134px;
+            }
+            @include small {
+              bottom: 110px;
+            }
+            @include extraSmall {
+              bottom: 106px;
+            }
+            img.action-running {
+              height: auto;
+              display: block;
+              image-rendering: pixelated;
+              position: absolute;
+              top: -83px;
+              left: -30px;
+              width: 75px;
+              animation: marioRun 3s ease-in-out 0s infinite;
+              @include large {
+                left: -10px;
+                width: 60px;
+              }
+              @include medium {
+                top: 9px;
+                left: -10px;
+                width: 60px;
+              }
+              @include small {
+                top: 9px;
+                left: 4px;
+                width: 57px;
+              }
+              @include extraSmall {
+                top: 21px;
+                left: 4px;
+                width: 50px;
+              }
+            }
+            img.mushroom {
+              position: absolute;
+              top: -62px;
+              left: 80px;
+              width: 31px;
+              height: auto;
+              transform-origin: 50% 50%;
+              animation: mushroom 0.5s linear alternate infinite;
+              @include large {
+                top: -65px;
+                left: 80px;
+                width: 25px;
+              }
+              @include medium {
+                top: 25px;
+                left: 80px;
+                width: 25px;
+              }
+              @include small {
+                top: 27px;
+                left: 72px;
+                width: 23px;
+              }
+              @include extraSmall {
+                top: 29px;
+                left: 72px;
+                width: 23px;
+              }
+            }
+          }
+          &.mario-fly {
+            display: none;
+            bottom: 98px;
+            left: 50%;
+            margin-left: -55px;
+            @include large {
+              bottom: 57px;
+            }
+            @include medium {
+              bottom: 153px;
+            }
+            @include small {
+              bottom: 133px;
+            }
+            @include extraSmall {
+              bottom: 108px;
+            }
+            img.action-flying {
+              height: auto;
+              display: block;
+              image-rendering: pixelated;
+              position: absolute;
+              top: -72px;
+              left: -30px;
+              width: 75px;
+              animation: marioFly 3s ease-in-out 0s infinite;
+              @include large {
+                top: -70px;
+                left: -10px;
+                width: 60px;
+              }
+              @include medium {
+                top: 26px;
+                left: -10px;
+                width: 60px;
+              }
+              @include small {
+                top: 27px;
+                left: -6px;
+                width: 57px;
+              }
+              @include extraSmall {
+                top: 24px;
+                left: -6px;
+                width: 50px;
+              }
+            }
+            img.mushroom {
+              position: absolute;
+              top: -42px;
+              left: 80px;
+              width: 31px;
+              height: auto;
+              transform-origin: 50% 50%;
+              animation: mushroom 0.5s linear alternate infinite;
+              @include large {
+                top: -50px;
+                left: 80px;
+                width: 25px;
+              }
+              @include medium {
+                top: 45px;
+                left: 80px;
+                width: 25px;
+              }
+              @include small {
+                top: 49px;
+                left: 72px;
+                width: 23px;
+              }
+              @include extraSmall {
+                top: 32px;
+                left: 72px;
+                width: 23px;
+              }
+            }
+          }
+        }
+        .ground {
+          width: 538px;
+          height: 100px;
+          background-image: url('../images/ground-bg.jpg');
+          bottom: -20px;
+          background-size: contain;
+          position: absolute;
+          background-repeat: repeat-x;
+          animation-name: ground;
+          animation-duration: 0.2s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          border-bottom-left-radius: 2px;
+          border-bottom-right-radius: 2px;
+          @include large {
+            width: 337px;
+            height: 64px;
+            bottom: -5px;
+          }
+          @include medium {
+            width: 399px;
+            height: 62px;
+            background-image: url('../images/ground-bg-medium.jpg');
+            bottom: -2px;
+          }
+          @include small {
+            width: 255px;
+            height: 50px;
+            bottom: -10px;
+            background-image: url('../images/ground-bg-small.jpg');
+          }
+          @include extraSmall {
+            width: 205px;
+            height: 44px;
+            bottom: -11px;
+            background-image: url('../images/ground-bg-small.jpg');
+          }
+        }
+        .background {
+          width: 538px;
+          height: 340px;
+          position: absolute;
+          top: -5px;
+          left: 0;
+          z-index: -1;
+          background-repeat: repeat-x;
+          background-size: contain;
+          animation-name: background;
+          animation-duration: 10s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          &.run {
+            background-image: url('../images/run-bg.jpg');
+          }
+          &.fly {
+            background-image: url('../images/fly-bg.jpg');
+          }
+          @include large {
+            width: 399px;
+            height: 291px;
+            top: -20px;
+            animation-name: background2;
+          }
+          @include medium {
+            width: 399px;
+            height: 291px;
+            top: -20px;
+            animation-name: background2;
+          }
+          @include small {
+            width: 319px;
+            height: 267px;
+            top: 0px;
+            animation-name: background3;
+          }
+          @include extraSmall {
+            width: 240px;
+            height: 267px;
+            top: 0px;
+            animation-name: background4;
+            &.run {
+              background-image: url('../images/run-bg-small.jpg');
+            }
+            &.fly {
+              background-image: url('../images/fly-bg-small.jpg');
+            }
+          }
+        }
+      }
+    }
+    #game-joystick {
+      width: 220px;
+      height: auto;
+      position: absolute !important;
+      bottom: -112px;
+      left: 50%;
+      transform: translateX(-50%) !important;
+      margin-left: 4%;
+      @include large {
+        width: 170px;
+        bottom: -90px;
+        margin-left: 4%;
+      }
+      @include medium {
+        width: 185px;
+        bottom: -95px;
+        margin-left: 0%;
+      }
+      @include small {
+        width: 155px;
+        bottom: -80px;
+        margin-left: calc(-155px / 2 - 3%);
+      }
+      @include extraSmall {
+        width: 130px;
+        bottom: -68px;
+        margin-left: calc(-130px / 2 - 8%);
+      }
+      @media (max-width: 320px) {
+        display: none;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    #game-cartridge {
+      width: 250px;
+      height: auto;
+      position: absolute !important;
+      bottom: -160px;
+      left: 50%;
+      transform: translateX(-50%) !important;
+      margin-left: 40.5%;
+      @include large {
+        width: 210px;
+        bottom: -135px;
+        margin-left: 40%;
+      }
+      @include medium {
+        width: 215px;
+        bottom: -126px;
+        margin-left: 36%;
+      }
+      @include small {
+        width: 185px;
+        bottom: -120px;
+        margin-left: calc(185px / 2 + 3%);
+      }
+      @include extraSmall {
+        width: 155px;
+        bottom: -102px;
+        margin-left: calc(155px / 2 + 6%);
+      }
+      @media (max-width: 320px) {
+        display: none;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .main-text {
+    position: relative;
+    width: 38%;
+    min-width: 420px;
+    height: 320px;
+    z-index: 2;
+    margin-left: 2%;
+    @include large {
+      width: 37%;
+      height: 320px;
+      min-width: auto;
+    }
+    @include medium {
+      width: 90%;
+      height: 280px;
+      min-width: auto;
+      margin-left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    @include small {
+      width: 90%;
+      height: 300px;
+      min-width: auto;
+      margin-left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    @include extraSmall {
+      width: 85%;
+      height: auto;
+      // height: 260px;
+      min-width: auto;
+      margin-left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    #main-title {
+      @include medium {
+        width: 400px;
+        height: 170px;
+      }
+      @include small {
+        width: 330px;
+        height: 189px;
+      }
+      @include extraSmall {
+        width: 100%;
+        height: 37vmin;
+        max-height: fit-content;
+        // max-height: 145px;
+      }
+      .title-strings {
+        position: relative;
+        .greet {
+          background-image: linear-gradient(to left, #17c0e9, #c96ddd, #f45162);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-size: 22px;
+          font-weight: 600;
+          letter-spacing: 1px;
+          font-family: 'Roboto', Arial, Helvetica, sans-serif;
+          text-transform: uppercase;
+          @include extraSmall {
+            font-size: 5vmin;
+          }
+        }
+        h1 {
+          background-image: linear-gradient(to left, #17c0e9, #c96ddd, #f45162);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          margin: 0;
+          padding: 0;
+          font-size: 120px;
+          font-family: 'Bebas Neue', cursive;
+          width: 300px;
+          @include large {
+            width: 232px;
+            font-size: 96px;
+          }
+          @include medium {
+            width: 232px;
+            font-size: 96px;
+          }
+          @include small {
+            width: 223px;
+            font-size: 92px;
+          }
+          @include extraSmall {
+            width: 54vw;
+            font-size: 21vmin;
+          }
+        }
+        .year {
+          position: absolute;
+          top: 31px;
+          left: 315px;
+          font-family: 'Bebas Neue', cursive;
+          font-size: 42px;
+          color: #d166c5;
+          @include large {
+            left: 265px;
+          }
+          @include medium {
+            left: 265px;
+          }
+          @include small {
+            left: 250px;
+          }
+          @include extraSmall {
+            left: 59vw;
+            font-size: 28px;
+          }
+          .border {
+            position: absolute;
+            top: -11px;
+            left: -18px;
+            width: 95px;
+            @include extraSmall {
+              top: -11px;
+              left: -19px;
+              width: 76px;
+            }
+          }
+        }
+      }
+      #typed-strings {
+        position: relative;
+        h2 {
+          font-size: 38px;
+          color: $mainTxtColor;
+          font-weight: 600;
+          line-height: 1.3;
+          margin-top: 20px;
+          margin-bottom: 40px;
+          @include large {
+            font-size: 30px;
+          }
+          @include medium {
+            font-size: 30px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+          }
+          @include small {
+            font-size: 28px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
+          @include extraSmall {
+            font-size: 6.7vmin;
+            margin-top: 0px;
+            margin-bottom: 0px;
+          }
+          span.typed-cursor {
+            color: $mainTxtColor;
+          }
+        }
+      }
+    }
+    #btn-sign-up {
+      margin-top: 70px;
+      display: flex !important;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      @include medium {
+        margin-top: 0;
+        position: relative !important;
+        width: 400px;
+      }
+      @include small {
+        margin-top: 0;
+        position: relative !important;
+        width: 330px;
+      }
+      @include extraSmall {
+        margin-top: 0;
+        position: relative !important;
+        width: 100%;
+        margin-bottom: 4.5%;
+        margin-top: 0;
+      }
+      a.btn-sign-up {
+        width: 250px;
+        padding: 20px 50px;
+        text-align: center;
+        color: $mainTxtColor;
+        border-radius: 6px;
+        font-weight: 600;
+        color: $mainTxtColor;
+        text-shadow: 0 0 6px rgb(0, 0, 0, 0.8);
+        background-image: linear-gradient(to left, #17c0e9, #c96ddd, #f45162);
+        transition: all 0.4s ease;
+        margin-top: 190px;
+        @include large {
+          width: 320px;
+          margin-top: 130px;
+        }
+        @include medium {
+          width: 100%;
+          margin-top: 0;
+        }
+        @include small {
+          width: 100%;
+          margin-top: 0;
+        }
+        @include extraSmall {
+          width: 100%;
+          margin-top: 0;
+        }
+        &:hover {
+          box-shadow: inset 0 0 0 30px $mainTxtColor;
+          text-shadow: none;
+          color: #272733;
+        }
+      }
+    }
+  }
+
+  .drops-back {
+    width: 2000px;
+    height: 1000px;
+    background: url('../images/drops-back.png') center center no-repeat;
+    opacity: 0.3;
+    @include large {
+      width: 1250px;
+      height: 834px;
+      background: url('../images/drops-back-large.png') center center no-repeat;
+    }
+    @include medium {
+      width: 1250px;
+      height: 834px;
+      background: url('../images/drops-back-medium.png') center center no-repeat;
+    }
+    @include small {
+      width: 768px;
+      height: 834px;
+      background: url('../images/drops-back-small.png') center center no-repeat;
+    }
+    @include extraSmall {
+      width: 575px;
+      height: 834px;
+      background: url('../images/drops-back-small.png') center center no-repeat;
+    }
+  }
+  .drops-up {
+    width: 2000px;
+    height: 1000px;
+    background: url('../images/drops-up.png') center center no-repeat;
+    z-index: 1;
+    opacity: 0.5;
+    @include large {
+      width: 1200px;
+      height: 1000px;
+      background: url('../images/drops-up-large.png') center center no-repeat;
+    }
+    @include medium {
+      width: 1200px;
+      height: 600px;
+      background: url('../images/drops-up-medium.png') center center no-repeat;
+    }
+    @include small {
+      width: 768px;
+      height: 600px;
+      background: url('../images/drops-up-small.png') center center no-repeat;
+    }
+    @include extraSmall {
+      width: 575px;
+      height: 600px;
+      background: url('../images/drops-up-small.png') center center no-repeat;
+    }
+  }
+  #kv-back,
+  #kv-up {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+  }
+
+  #scroll-down {
+    position: absolute;
+    bottom: 60px;
+    left: 0px;
+    font-size: 14px;
+    color: $minorTxtColor;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    transform-origin: top;
+    cursor: pointer;
+    transform: rotate(90deg) translateX(0px);
+    opacity: 1;
+    z-index: 1;
+    visibility: visible;
+    transition: all 0.8s ease 1s;
+    @include large {
+      left: -10px;
+    }
+    @include medium {
+      left: -10px;
+    }
+    @include small {
+      left: -10px;
+    }
+    @include extraSmall {
+      display: none;
+    }
+    img {
+      position: absolute;
+      width: 14px;
+      transform: rotate(-90deg);
+      transform-origin: center;
+      left: -25px;
+      top: -4px;
+      animation: scrollDown 1s ease infinite;
+    }
+  }
+}

@@ -1,0 +1,415 @@
+@keyframes scrollDown {
+  0% {
+    left: -25px;
+  }
+  50% {
+    left: -35px;
+  }
+  100% {
+    left: -25px;
+  }
+}
+
+@keyframes loop {
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 30% 70% 60% 40% / 44% 30% 70% 56%;
+  }
+  50% {
+    border-radius: 54% 46% 49% 51% / 66% 68% 32% 34%;
+  }
+  100% {
+    border-radius: 40% 60%;
+  }
+}
+
+@keyframes scroll1 {
+  0% {
+    opacity: 1;
+    bottom: 0;
+    filter: alpha(opacity=100);
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+  }
+  50% {
+    bottom: 50%;
+  }
+  100% {
+    bottom: 100%;
+    opacity: 1;
+    filter: alpha(opacity=50);
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';
+  }
+}
+
+@keyframes scroll2 {
+  0% {
+    opacity: 1;
+    top: 0;
+    filter: alpha(opacity=100);
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+  }
+  50% {
+    top: 50%;
+  }
+  100% {
+    top: 100%;
+    opacity: 1;
+    filter: alpha(opacity=50);
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';
+  }
+}
+
+@keyframes scroll3 {
+  0% {
+    opacity: 1;
+    top: 0;
+    filter: alpha(opacity=100);
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+  }
+  50% {
+    top: 50%;
+  }
+  100% {
+    top: 100%;
+    opacity: 1;
+    filter: alpha(opacity=50);
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';
+  }
+}
+
+@keyframes scroll4 {
+  0% {
+    opacity: 1;
+    top: 0;
+    filter: alpha(opacity=100);
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+  }
+  50% {
+    top: 50%;
+  }
+  100% {
+    top: 100%;
+    opacity: 1;
+    filter: alpha(opacity=50);
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';
+  }
+}
+
+@keyframes dot1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.27861;
+  }
+  5% {
+    opacity: 0.34769;
+  }
+  10% {
+    opacity: 0.23604;
+  }
+  15% {
+    opacity: 0.90626;
+  }
+  20% {
+    opacity: 0.18128;
+  }
+  25% {
+    opacity: 0.83891;
+  }
+  30% {
+    opacity: 0.65583;
+  }
+  35% {
+    opacity: 0.67807;
+  }
+  40% {
+    opacity: 0.84693;
+  }
+  45% {
+    opacity: 0.96019;
+  }
+  50% {
+    opacity: 0.08594;
+  }
+  55% {
+    opacity: 0.20313;
+  }
+  60% {
+    opacity: 0.71988;
+  }
+  65% {
+    opacity: 0.53455;
+  }
+  70% {
+    opacity: 0.37288;
+  }
+  75% {
+    opacity: 0.71428;
+  }
+  80% {
+    opacity: 0.70419;
+  }
+  85% {
+    opacity: 0.7003;
+  }
+  90% {
+    opacity: 0.36108;
+  }
+  95% {
+    opacity: 0.24387;
+  }
+  100% {
+    opacity: 0.27861;
+  }
+}
+
+@keyframes marioRun {
+  50% {
+    transform: translateX(-15px);
+  }
+}
+
+@keyframes marioFly {
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes mushroom {
+  0% {
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+  }
+  40% {
+    transform: translate3d(0, 30%, 0) scale3d(0.9, 1.1, 1);
+  }
+  100% {
+    transform: translate3d(0, 100%, 0) scale3d(1.1, 0.9, 1);
+  }
+}
+
+@keyframes ground {
+  0% {
+    background-position: 88px 0px;
+  }
+  100% {
+    background-position: 0px 0px;
+  }
+}
+
+@keyframes background {
+  0% {
+    background-position: 538px 0px;
+  }
+  100% {
+    background-position: 0px 0px;
+  }
+}
+
+@keyframes background2 {
+  0% {
+    background-position: 399px 0px;
+  }
+  100% {
+    background-position: 0px 0px;
+  }
+}
+
+@keyframes background3 {
+  0% {
+    background-position: 319px 0px;
+  }
+  100% {
+    background-position: 0px 0px;
+  }
+}
+
+@keyframes background4 {
+  0% {
+    background-position: 240px 0px;
+  }
+  100% {
+    background-position: 0px 0px;
+  }
+}
+
+@keyframes ripple {
+  70% {
+    box-shadow: 0 0 0 20px rgba(255, 138, 230, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 138, 230, 0);
+  }
+}
+
+@keyframes noise {
+  0% {
+    clip: rect(57px, 9999px, 57px, 0);
+  }
+  5% {
+    clip: rect(94px, 9999px, 3px, 0);
+  }
+  10% {
+    clip: rect(53px, 9999px, 14px, 0);
+  }
+  15% {
+    clip: rect(27px, 9999px, 3px, 0);
+  }
+  20% {
+    clip: rect(66px, 9999px, 43px, 0);
+  }
+  25% {
+    clip: rect(51px, 9999px, 27px, 0);
+  }
+  30% {
+    clip: rect(22px, 9999px, 26px, 0);
+  }
+  35% {
+    clip: rect(36px, 9999px, 7px, 0);
+  }
+  40% {
+    clip: rect(34px, 9999px, 11px, 0);
+  }
+  45% {
+    clip: rect(59px, 9999px, 37px, 0);
+  }
+  50% {
+    clip: rect(95px, 9999px, 54px, 0);
+  }
+  55% {
+    clip: rect(60px, 9999px, 51px, 0);
+  }
+  60% {
+    clip: rect(48px, 9999px, 68px, 0);
+  }
+  65% {
+    clip: rect(95px, 9999px, 54px, 0);
+  }
+  70% {
+    clip: rect(26px, 9999px, 2px, 0);
+  }
+  75% {
+    clip: rect(38px, 9999px, 2px, 0);
+  }
+  80% {
+    clip: rect(29px, 9999px, 89px, 0);
+  }
+  85% {
+    clip: rect(45px, 9999px, 79px, 0);
+  }
+  90% {
+    clip: rect(99px, 9999px, 88px, 0);
+  }
+  95% {
+    clip: rect(89px, 9999px, 19px, 0);
+  }
+  100% {
+    clip: rect(90px, 9999px, 14px, 0);
+  }
+}
+
+@keyframes noise2 {
+  0% {
+    clip: rect(47px, 9999px, 13px, 0);
+  }
+  5% {
+    clip: rect(20px, 9999px, 43px, 0);
+  }
+  10% {
+    clip: rect(43px, 9999px, 94px, 0);
+  }
+  15% {
+    clip: rect(56px, 9999px, 63px, 0);
+  }
+  20% {
+    clip: rect(94px, 9999px, 12px, 0);
+  }
+  25% {
+    clip: rect(67px, 9999px, 75px, 0);
+  }
+  30% {
+    clip: rect(14px, 9999px, 98px, 0);
+  }
+  35% {
+    clip: rect(73px, 9999px, 65px, 0);
+  }
+  40% {
+    clip: rect(48px, 9999px, 43px, 0);
+  }
+  45% {
+    clip: rect(80px, 9999px, 40px, 0);
+  }
+  50% {
+    clip: rect(64px, 9999px, 55px, 0);
+  }
+  55% {
+    clip: rect(57px, 9999px, 69px, 0);
+  }
+  60% {
+    clip: rect(11px, 9999px, 96px, 0);
+  }
+  65% {
+    clip: rect(95px, 9999px, 66px, 0);
+  }
+  70% {
+    clip: rect(38px, 9999px, 34px, 0);
+  }
+  75% {
+    clip: rect(78px, 9999px, 64px, 0);
+  }
+  80% {
+    clip: rect(8px, 9999px, 70px, 0);
+  }
+  85% {
+    clip: rect(35px, 9999px, 31px, 0);
+  }
+  90% {
+    clip: rect(25px, 9999px, 11px, 0);
+  }
+  95% {
+    clip: rect(18px, 9999px, 34px, 0);
+  }
+  100% {
+    clip: rect(92px, 9999px, 97px, 0);
+  }
+}
+
+@keyframes gridAni {
+  0% {
+    transform: rotateX(45deg) translateY(-50%);
+  }
+  100% {
+    transform: rotateX(45deg) translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

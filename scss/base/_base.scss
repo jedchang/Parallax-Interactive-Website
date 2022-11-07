@@ -1,0 +1,49 @@
+@import './reset';
+@import '../vendors/royal_preloader';
+@import '../vendors/fontawesome-free-all';
+@import '../vendors/bootstrap-grid';
+
+@import '../utils/variable';
+@import '../utils/mixin';
+@import '../utils/animation';
+
+@import '../layout/vision';
+@import '../layout/trouble';
+@import '../layout/interactive';
+@import '../layout/themes';
+@import '../layout/rule';
+@import '../layout/awards';
+@import '../layout/devices';
+@import '../layout/faq';
+@import '../layout/sponsor';
+@import '../layout/footer';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html {
+  font-family: Helvetica, sans-serif;
+  -webkit-text-size-adjust: none;
+  background-color: #ccc;
+}
+
+body {
+  background: $minorBgColor;
+  font-family: 'Microsoft JhengHei', -apple-system, '微軟正黑體', Helvetica, Arial, sans-serif;
+  // font-family: "Roboto",Arial, Helvetica, sans-serif;
+  // font-family: 'Rubik', Helvetica, Arial, sans-serif;
+  // font-family: 'Bebas Neue', cursive;
+}
+h1,
+h2,
+h3,
+h4,
+li,
+p {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}

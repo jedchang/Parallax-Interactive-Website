@@ -1,0 +1,234 @@
+/*=============================================
+=            trouble           =
+=============================================*/
+section#trouble {
+  background-color: $minorBgColor;
+  @include extraSmall {
+    padding-bottom: 50px;
+  }
+  .trouble-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 85px;
+    opacity: 1;
+    transition: all 0.4s ease;
+    @include medium {
+      margin-bottom: 105px;
+      flex-direction: column;
+      opacity: 0;
+    }
+    @include small {
+      margin-bottom: 95px;
+      flex-direction: column;
+      opacity: 0;
+    }
+    @include extraSmall {
+      margin-bottom: 95px;
+      flex-direction: column;
+      opacity: 0;
+    }
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+      @include medium {
+        margin-bottom: 105px;
+        flex-direction: column;
+        opacity: 0;
+      }
+      @include small {
+        margin-bottom: 95px;
+        flex-direction: column;
+        opacity: 0;
+      }
+      @include extraSmall {
+        margin-bottom: 95px;
+        flex-direction: column;
+        opacity: 0;
+      }
+    }
+  }
+  .shape-round-box {
+    width: 50%;
+    height: 429px;
+    margin: 0 auto;
+    position: relative;
+    transition: all 0.4s ease;
+    @include large {
+      height: 409px;
+    }
+    @include medium {
+      width: 100%;
+      height: auto;
+    }
+    @include small {
+      width: 100%;
+      height: auto;
+    }
+    @include extraSmall {
+      width: 220px;
+      height: 220px;
+    }
+    &.shape-round-box-left {
+      transform: translateX(100px);
+      @include medium {
+        transform: translateX(0px);
+      }
+      @include small {
+        transform: translateX(0px);
+      }
+      @include extraSmall {
+        transform: translateX(0px);
+      }
+    }
+    &.shape-round-box-right {
+      transform: translateX(-100px);
+      @include medium {
+        transform: translateX(0px);
+      }
+      @include small {
+        transform: translateX(0px);
+      }
+      @include extraSmall {
+        transform: translateX(0px);
+      }
+    }
+    .spin-container {
+      position: relative;
+      width: 442px;
+      height: 429px;
+      margin: 0 auto;
+      animation: spin 12s linear infinite;
+      @include large {
+        width: 422px;
+        height: 409px;
+      }
+      @include medium {
+        width: 422px;
+        height: 409px;
+      }
+      @include small {
+        width: 392px;
+        height: 379px;
+      }
+      @include extraSmall {
+        width: 220px;
+        height: 220px;
+      }
+    }
+    .img-round-shape {
+      width: 442px;
+      height: 429px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      background-image: linear-gradient(to left, #17c0e9, #c96ddd, $minorBgColor);
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      animation: morph 8s ease-in-out infinite both alternate;
+      @include large {
+        width: 422px;
+        height: 409px;
+      }
+      @include medium {
+        width: 422px;
+        height: 409px;
+      }
+      @include small {
+        width: 392px;
+        height: 379px;
+      }
+      @include extraSmall {
+        width: 220px;
+        height: 220px;
+      }
+    }
+    img {
+      position: absolute;
+      bottom: 70px;
+      left: 150px;
+      width: 280px;
+      @include large {
+        width: 260px;
+      }
+      @include medium {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      @include small {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      @include extraSmall {
+        bottom: 30px;
+        left: 50%;
+        width: 160px;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  .troubled-title {
+    position: relative;
+    width: 50%;
+    height: 429px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+    @include medium {
+      width: 100%;
+      height: auto;
+      margin-top: 50px;
+    }
+    @include small {
+      width: 100%;
+      height: auto;
+      margin-top: 50px;
+    }
+    @include extraSmall {
+      width: 100%;
+      height: auto;
+      margin-top: 35px;
+    }
+    &.troubled-title-left {
+      transform: translateX(-100px);
+      @include medium {
+        transform: translateX(0px);
+      }
+      @include small {
+        transform: translateX(0px);
+      }
+      @include extraSmall {
+        transform: translateX(0px);
+      }
+    }
+    &.troubled-title-right {
+      transform: translateX(100px);
+      @include medium {
+        transform: translateX(0px);
+      }
+      @include small {
+        transform: translateX(0px);
+      }
+      @include extraSmall {
+        transform: translateX(0px);
+      }
+    }
+    h2 {
+      font-size: 42px;
+      font-weight: 600;
+      color: $mainColor;
+      @include large {
+        font-size: 34px;
+      }
+      @include medium {
+        font-size: 36px;
+      }
+      @include small {
+        font-size: 38px;
+      }
+      @include extraSmall {
+        font-size: 7.1vmin;
+      }
+    }
+  }
+}

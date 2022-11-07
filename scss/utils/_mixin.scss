@@ -1,0 +1,36 @@
+// @mixin setTransition($time: 0.4s) {
+//   transition: all $time ease-out;
+// }
+
+/*====================  RWD (Media Queries)  =====================*/
+
+// Extra small devices (portrait phones, less than 576px)
+@mixin extraSmall {
+  @media (max-width: 575px) {
+    @content;
+  }
+}
+// Small devices (landscape phones, 576px and up)
+@mixin small {
+  @media (min-width: 576px) and (max-width: 767px) {
+    @content;
+  }
+}
+// Medium devices (tablets, 768px and up)
+@mixin medium {
+  @media (min-width: 768px) and (max-width: 991px) {
+    @content;
+  }
+}
+// Large devices (desktops, 992px and up)
+@mixin large {
+  @media (min-width: 992px) and (max-width: 1199px) {
+    @content;
+  }
+}
+// Extra large devices (large desktops, 1200px and up)
+@mixin extraLarge {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}

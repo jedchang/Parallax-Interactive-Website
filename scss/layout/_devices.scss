@@ -1,0 +1,171 @@
+/*=============================================
+=            devices set            =
+=============================================*/
+.devices-set {
+  position: relative;
+  padding: 120px 0;
+  height: 650px !important;
+  @include extraSmall {
+    padding: 80px 0;
+    height: 100vh;
+  }
+  .image-tablet {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 137px;
+    height: auto;
+    z-index: 2;
+    margin-left: -220px;
+    margin-top: 108px;
+    @include large {
+      width: 122px;
+      margin-left: -20%;
+      margin-top: 83px;
+    }
+    @include medium {
+      width: 122px;
+      margin-left: -26.5%;
+      margin-top: 96px;
+    }
+    @include small {
+      width: 102px;
+      margin-left: -28%;
+      margin-top: 102px;
+    }
+    @include extraSmall {
+      width: 82px;
+      margin-left: -108px;
+      margin-top: 43px;
+    }
+  }
+  .image-mobile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 95px;
+    height: auto;
+    z-index: 2;
+    margin-left: -300px;
+    margin-top: 157px;
+    @include large {
+      width: 80px;
+      margin-left: -26.2%;
+      margin-top: 132px;
+    }
+    @include medium {
+      width: 80px;
+      margin-left: -35%;
+      margin-top: 145px;
+    }
+    @include small {
+      width: 60px;
+      margin-left: -36%;
+      margin-top: 148px;
+    }
+    @include extraSmall {
+      width: 50px;
+      margin-left: -144px;
+      margin-top: 77px;
+    }
+  }
+  .devices-pc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    @include extraSmall {
+      margin-top: -35px;
+    }
+    .screen {
+      width: 382px;
+      height: 200px;
+      overflow: hidden;
+      position: absolute;
+      z-index: 2;
+      top: 35px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 8px;
+      @include large {
+        width: 370px;
+        height: 194px;
+      }
+      @include medium {
+        width: 370px;
+        height: 194px;
+      }
+      @include small {
+        width: 340px;
+        height: 178px;
+      }
+      @include extraSmall {
+        width: 240px;
+        height: 126px;
+        top: 23px;
+      }
+      img.screen-scroll {
+        opacity: 1;
+        width: 100%;
+        height: auto;
+      }
+      img.noise {
+        opacity: 0;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    .image-pc {
+      width: 443px;
+      height: auto;
+      @include large {
+        width: 430px;
+      }
+      @include medium {
+        width: 430px;
+      }
+      @include small {
+        width: 400px;
+      }
+      @include extraSmall {
+        width: 280px;
+      }
+    }
+  }
+  .image-laptop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 375px;
+    height: auto;
+    margin-left: 260px;
+    margin-top: 107px;
+    @include large {
+      width: 305px;
+      margin-left: 26%;
+      margin-top: 94px;
+    }
+    @include medium {
+      width: 305px;
+      margin-left: 27%;
+      margin-top: 106px;
+    }
+    @include small {
+      width: 265px;
+      margin-left: 32%;
+      margin-top: 106px;
+    }
+    @include extraSmall {
+      width: 200px;
+      margin-left: 135px;
+      margin-top: 47px;
+    }
+  }
+}
