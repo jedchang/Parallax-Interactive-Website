@@ -45,7 +45,7 @@ footer {
       font-family: 'Rubik', Helvetica, Arial, sans-serif;
       font-weight: 600;
       color: $minorTxtColor;
-      transition: 0.4s;
+      @include setTransition;
       &:hover {
         color: $mainColor;
       }
@@ -82,7 +82,7 @@ footer {
       align-items: center;
       justify-content: center;
       text-align: center;
-      transition: all 0.5s ease;
+      @include setTransition(0.5s);
       @include extraSmall {
         width: 42px;
         height: 42px;

@@ -58,7 +58,6 @@ section#sponsor {
         .char {
           animation: fadeInUp 0.3s cubic-bezier(0.3, 0, 0.7, 1) both;
         }
-        // 產生 char-1、char-2...
         @for $i from 1 through 18 {
           .char-#{$i} {
             animation-delay: calc(20ms * $i);
@@ -120,7 +119,7 @@ section#sponsor {
         position: relative;
         width: auto;
         background-repeat: no-repeat;
-        background-image: linear-gradient(to left, #17c0e9, #c96ddd, #f45162);
+        @include setBgImgLinearGradient;
         -webkit-text-fill-color: rgba(0, 0, 0, 0.2);
         background-clip: text;
         background-size: 0% 100%;
@@ -150,7 +149,7 @@ section#sponsor {
       vertical-align: middle;
       height: auto;
       margin: auto;
-      transition: all 0.4s ease;
+      @include setTransition;
     }
     a.link {
       opacity: 0;
@@ -161,11 +160,11 @@ section#sponsor {
       transform: translateX(-50%);
       width: 100%;
       color: #fff;
-      transition: all 0.3s;
+      @include setTransition(0.3s);
       .char {
         font-size: 14px;
         display: inline-block;
-        transition: all 0.3s;
+        @include setTransition(0.3s);
         @include medium {
           font-size: 13px;
         }

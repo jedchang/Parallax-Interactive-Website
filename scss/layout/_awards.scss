@@ -4,7 +4,7 @@
 section#awards {
   background-color: $minorBgColor;
   text-align: center;
-  padding-top: 150px; // devices set space
+  padding-top: 150px; 
   @include extraSmall {
     padding-top: 80px;
   }
@@ -42,7 +42,7 @@ section#awards {
     border: 15px solid rgba(0, 0, 0, 0.06);
     position: relative;
     z-index: 1;
-    transition: all 0.4s ease;
+    @include setTransition;
     @include large {
       height: 440px;
     }
@@ -73,8 +73,8 @@ section#awards {
       left: -10px;
       right: -10px;
       bottom: -10px;
-      background-image: linear-gradient(to left, #17c0e9, #c96ddd, #f45162);
-      transition: all 0.4s;
+      @include setBgImgLinearGradient;
+      @include setTransition;
     }
     &::after {
       content: '';
@@ -134,7 +134,7 @@ section#awards {
       background-color: $mainColor;
       transform: rotate(45deg);
       z-index: 0;
-      transition: 1s;
+      @include setTransition(1s);
     }
     img {
       width: 70px;

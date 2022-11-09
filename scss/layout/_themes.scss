@@ -53,7 +53,7 @@ section#themes {
       border: 1px solid rgba(255, 255, 255, 0.1);
       box-shadow: 0 0 20px rgba(11, 12, 16, 0.5);
       z-index: 3;
-      transition: all 0.4s;
+      @include setTransition;
       @include large {
         width: 290px;
         padding: 20px 20px;
@@ -86,9 +86,9 @@ section#themes {
         left: -1px;
         right: -1px;
         bottom: -1px;
-        background-image: linear-gradient(to left, #17c0e9, #c96ddd, #f45162);
+        @include setBgImgLinearGradient;
         opacity: 0;
-        transition: all 0.4s;
+        @include setTransition;
       }
       &::after {
         content: '';
@@ -380,7 +380,7 @@ section#themes {
       font-weight: 600;
       position: relative;
       border-radius: 50px;
-      transition: all 0.4s ease;
+      @include setTransition;
       @include small {
         padding: 14px 40px;
         font-size: 14px;

@@ -42,7 +42,6 @@ section#rule {
   }
   .vertical-line {
     display: block;
-    // height: calc(100% + 200px);
     width: 2px;
     background: $mainColor;
     position: absolute;
@@ -155,7 +154,7 @@ section#rule {
     z-index: 1;
     opacity: 1;
     visibility: visible;
-    transition: all 0.4s ease;
+    @include setTransition;
     &::before {
       content: '';
       position: absolute;
@@ -166,9 +165,9 @@ section#rule {
       left: -1px;
       right: -1px;
       bottom: -1px;
-      background-image: linear-gradient(to left, #17c0e9, #c96ddd, #f45162);
+      @include setBgImgLinearGradient;
       opacity: 0;
-      transition: all 0.4s;
+      @include setTransition;
     }
     &::after {
       content: '';
@@ -219,7 +218,7 @@ section#rule {
     }
     &:nth-child(odd) {
       transform: translate(30px, 278px);
-      transition: all 0.4s ease;
+      @include setTransition;
       @include large {
         transform: translate(-15px, 302px);
       }
@@ -399,7 +398,7 @@ section#rule {
       font-size: 18px;
       font-family: 'Roboto', Arial, Helvetica, sans-serif;
       font-weight: 600;
-      width: 240px; // 要斷行
+      width: 240px;
       height: 50px;
       line-height: 1.3;
       color: $mainTxtColor;

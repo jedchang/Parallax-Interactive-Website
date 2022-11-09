@@ -1,6 +1,10 @@
-// @mixin setTransition($time: 0.4s) {
-//   transition: all $time ease-out;
-// }
+@mixin setTransition($time: 0.4s) {
+  transition: all $time 0s ease;
+}
+
+@mixin setBgImgLinearGradient($direction: left) {
+  background-image: linear-gradient(to $direction, #17c0e9, #c96ddd, #f45162);
+}
 
 /*====================  RWD (Media Queries)  =====================*/
 

@@ -455,7 +455,7 @@ section#call-action {
       color: $mainTxtColor;
       border: 1px solid #fff;
       text-shadow: 0 0 6px rgb(0, 0, 0, 0.8);
-      transition: all 0.4s ease;
+      @include setTransition;
       @include large {
         width: 100%;
       }
@@ -490,7 +490,7 @@ section#call-action {
   right: -45px;
   background-color: rgba(255, 255, 255, 0.25);
   z-index: 10;
-  transition: all 0.4s ease;
+  @include setTransition;
   &.show {
     right: 45px;
     @include large {
@@ -508,7 +508,7 @@ section#call-action {
   }
   a {
     color: #fff;
-    transition: all 0.4s ease;
+    @include setTransition;
     &:hover {
       color: #fff;
       .text {

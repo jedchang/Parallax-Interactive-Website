@@ -12,7 +12,7 @@ section#trouble {
     align-items: center;
     margin-bottom: 85px;
     opacity: 1;
-    transition: all 0.4s ease;
+    @include setTransition;
     @include medium {
       margin-bottom: 105px;
       flex-direction: column;
@@ -52,7 +52,7 @@ section#trouble {
     height: 429px;
     margin: 0 auto;
     position: relative;
-    transition: all 0.4s ease;
+    @include setTransition;
     @include large {
       height: 409px;
     }
@@ -173,7 +173,7 @@ section#trouble {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.4s ease;
+    @include setTransition;
     @include medium {
       width: 100%;
       height: auto;
