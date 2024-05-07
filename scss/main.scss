@@ -89,8 +89,9 @@ section {
     user-select: none;
     font-size: 280px;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    color: rgba(0, 0, 0, 0);
-    -webkit-text-stroke-width: 1px;
+    // color: rgba(0, 0, 0, 0);
+    color: red;
+    -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: rgba(118, 128, 161, 0.3);
     @include large {
       font-size: 240px;
@@ -278,7 +279,7 @@ section.infinite-loop {
   overflow: hidden;
   padding: 100px 0;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: rgba(255, 255, 255, 0.15);
   @include extraSmall {
     padding: 50px 0;
@@ -423,7 +424,7 @@ section#call-action {
       align-items: center;
     }
     span.word {
-      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-width: 2px;
       -webkit-text-stroke-color: #fff;
       color: transparent;
       font-weight: 800;
