@@ -108,6 +108,7 @@ section {
     span {
       position: relative;
       width: auto;
+      font-family: Arial, Helvetica, sans-serif;
       background-repeat: no-repeat;
       background-image: linear-gradient(to left, rgba(118, 128, 161, 0.15), rgba(118, 128, 161, 0.15));
       -webkit-text-fill-color: rgba(0, 0, 0, 0.2);
@@ -278,7 +279,7 @@ section.infinite-loop {
   min-height: auto;
   overflow: hidden;
   padding: 100px 0;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: rgba(255, 255, 255, 0.15);
   @include extraSmall {
@@ -424,6 +425,7 @@ section#call-action {
       align-items: center;
     }
     span.word {
+      font-family: Arial, Helvetica, sans-serif;
       -webkit-text-stroke-width: 2px;
       -webkit-text-stroke-color: #fff;
       color: transparent;
