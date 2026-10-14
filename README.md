@@ -2,7 +2,9 @@
 
 視差滾動互動式網站
 
-![image](https://github.com/jedchang/Parallax-Interactive-Website/blob/master/preview.jpg)
+<!-- ![image](https://github.com/jedchang/Parallax-Interactive-Website/blob/master/preview.jpg) -->
+
+![image](https://raw.githubusercontent.com/jedchang/Parallax-Interactive-Website/refs/heads/master/preview.jpg)
 
 ## Demo
 
