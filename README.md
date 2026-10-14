@@ -2,7 +2,7 @@
 
 視差滾動互動式網站
 
-![](https://images2.imgbox.com/95/1c/GK7g86hL_o.jpg)
+![image](https://github.com/jedchang/Parallax-Interactive-Website/blob/master/preview.jpg)
 
 ## Demo
 
